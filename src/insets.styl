@@ -1,0 +1,15 @@
+@import 'variables'
+
+divide(a, b)
+  a / b
+
+for size in sizes
+  .inset-{size}
+    padding: lookup('var' + size)
+    
+  if size != xxs
+    .inset-squish-{size}
+      padding: divide(lookup('var' + size), 2) lookup('var' + size)
+
+    .inset-stretch-{size}
+      padding: lookup('var' + size) divide(lookup('var' + size), 2)

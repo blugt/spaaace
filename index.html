@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Example usage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <style>
+      * {
+        font-family: 'Muli', sans-serif;
+        color: #3C4A59;
+        text-transform: uppercase;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+      }
+
+      .inline-container {
+        background-color: #0287D0;
+        display: flex;
+        height: 200px;
+      }
+
+      .stack-container {
+        background-color: #F39C12;
+      }
+
+      div[class*="inset"] {
+        display: inline-block;
+        background-color: #e74c3c;
+      }
+
+      div[class*="stretch"] {
+        background-color: #1ABC9C;
+      }
+
+      div[class*="squish"] {
+        background-color: #8E44AD;
+      }
+
+      div[class*="inset"] > div {
+        background-color: rgba(255, 255, 255, 0.65);
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        line-height: 10px;
+        padding: 8px;
+      }
+
+      div[class*="inline"] {
+        height: 100%;
+        width: 25px;
+        background-color: rgba(255, 255, 255, 0.65);
+      }
+
+      div[class*="stack"] {
+        background-color: rgba(255, 255, 255, 0.65);
+        width: 100%;
+        height: 25px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <section class="inset-stretch-container stack-l">
+        <div class="inset-stretch-xs">
+          <div>xs</div>
+        </div>
+        <div class="inset-stretch-ss">
+          <div>ss</div>
+        </div>
+        <div class="inset-stretch-m">
+          <div>m</div>
+        </div>
+        <div class="inset-stretch-l">
+          <div>l</div>
+        </div>
+        <div class="inset-stretch-xl">
+          <div>xl</div>
+        </div>
+      </section>
+      <section class="inset-squish-container stack-l">
+        <div class="inset-squish-xs"><div>xs</div></div>
+        <div class="inset-squish-ss"><div>ss</div></div>
+        <div class="inset-squish-m"><div>m</div></div>
+        <div class="inset-squish-l"><div>l</div></div>
+        <div class="inset-squish-xl"><div>xl</div></div>
+      </section>
+      <section class="inset-container stack-l">
+        <div class="inset-xxs"><div>xxs</div></div>
+        <div class="inset-xs"><div>xs</div></div>
+        <div class="inset-ss"><div>ss</div></div>
+        <div class="inset-m"><div>m</div></div>
+        <div class="inset-l"><div>l</div></div>
+        <div class="inset-xl"><div>xl</div></div>
+      </section>
+      <section class="inline-container stack-l">
+        <div class="inline-xxs">xxs</div>
+        <div class="inline-xs">xs</div>
+        <div class="inline-ss">ss</div>
+        <div class="inline-m">m</div>
+        <div class="inline-l">l</div>
+        <div class="inline-xl">xl</div>
+      </section>
+      <section class="stack-container stack-l">
+        <div class="stack-xxs">xxs</div>
+        <div class="stack-xs">xs</div>
+        <div class="stack-ss">ss</div>
+        <div class="stack-m">m</div>
+        <div class="stack-l">l</div>
+        <div class="stack-xl">xl</div>
+      </section>
+    </div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  </body>
+</html>

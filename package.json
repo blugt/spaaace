@@ -1,0 +1,16 @@
+{
+  "name": "spaaace",
+  "version": "1.0.0",
+  "description": "CSS helper classes for spacing design.",
+  "main": "main.styl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx stylus src/main.styl -o dist/style.css",
+    "compile-compress": "npx stylus src/main.styl -c -o dist/style.css"
+  },
+  "author": "Telmo Alves",
+  "license": "ISC",
+  "dependencies": {
+    "stylus": "^0.54.5"
+  }
+}
