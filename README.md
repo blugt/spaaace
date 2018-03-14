@@ -6,61 +6,45 @@ I found this article quite helpful, even though I'm not a designer I still am a 
 
 ## Getting Started
 
-There's no real science for getting started with this little piece.
+There's no real science for getting started with this project.
 
 ### Prerequisites
 
 To compile a new version you'll need:
-* [Nodejs]()
-* [Stylus]()
+* [Nodejs](https://nodejs.org/en/)
+* [Npm](https://www.npmjs.com/)
+* [Stylus](http://stylus-lang.com/)
+
+Note: As of NPM v5.2, a new tool to run scripts is included, npx, which let's developers run local binaries from the node_modules folder without having to write the full path to them. The build scripts take advantage of that and thus that's the minimum required version of npm to compile this project.
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+There is no development environment due to the size of the project but get everything needed to compile a new version the steps are:
 
-Say what the step will be
+Install **nodejs** (**npm** is included)
 
-```
-Give the example
-```
-
-And repeat
+#### Linux
 
 ```
-until finished
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Next install the project dependencies
 
 ```
-Give an example
+npm install
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+To test that everything is installed execute `npm run compile` and it should generate a new `style.css` file. 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To use this in a project just import the css file from `node_modules/spaaace/style.css`.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Stylus](http://stylus-lang.com/)
 
 ## Contributing
 
@@ -72,16 +56,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Telmo Alves** - *Initial work* - [blugt](https://github.com/blugt)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
