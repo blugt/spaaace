@@ -24,6 +24,7 @@
         display: flex;
         flex-direction: column;
         max-width: 500px;
+        margin: 0 auto;
       }
 
       .inline-container {
@@ -64,6 +65,13 @@
         background-color: rgba(255, 255, 255, 0.65);
       }
 
+      div[class*="inline"] > span {
+        transform: rotate(-90deg);
+        display: block;
+        margin-top: 16px;
+        text-align: left;
+      }
+
       div[class*="stack"] {
         background-color: rgba(255, 255, 255, 0.65);
         width: 100%;
@@ -73,21 +81,10 @@
     </style>
   </head>
   <body>
+    <h3>Spaaace</h3>
+    <p>Serves as visual aid on how styles should apply</p>
     <div id="container" class="container">
-      <section class="inset-stretch-container stack-l">
-        <div class="inset-stretch-xs"><div>xs</div></div>
-        <div class="inset-stretch-ss"><div>ss</div></div>
-        <div class="inset-stretch-m"><div>m</div></div>
-        <div class="inset-stretch-l"><div>l</div></div>
-        <div class="inset-stretch-xl"><div>xl</div></div>
-      </section>
-      <section class="inset-squish-container stack-l">
-        <div class="inset-squish-xs"><div>xs</div></div>
-        <div class="inset-squish-ss"><div>ss</div></div>
-        <div class="inset-squish-m"><div>m</div></div>
-        <div class="inset-squish-l"><div>l</div></div>
-        <div class="inset-squish-xl"><div>xl</div></div>
-      </section>
+      <h5>Inset</h5>
       <section class="inset-container stack-l">
         <div class="inset-xxs"><div>xxs</div></div>
         <div class="inset-xs"><div>xs</div></div>
@@ -96,16 +93,34 @@
         <div class="inset-l"><div>l</div></div>
         <div class="inset-xl"><div>xl</div></div>
       </section>
-      <section class="inline-container stack-l">
-        <div class="inline-xxs">xxs</div>
-        <div class="inline-xs">xs</div>
-        <div class="inline-ss">ss</div>
-        <div class="inline-m">m</div>
-        <div class="inline-l">l</div>
-        <div class="inline-xl">xl</div>
+      <h5>Inset Stretch</h5>
+      <section class="inset-stretch-container stack-l">
+        <div class="inset-stretch-xs"><div>xs</div></div>
+        <div class="inset-stretch-ss"><div>ss</div></div>
+        <div class="inset-stretch-m"><div>m</div></div>
+        <div class="inset-stretch-l"><div>l</div></div>
+        <div class="inset-stretch-xl"><div>xl</div></div>
       </section>
+      <h5>Inset Squish</h5>
+      <section class="inset-squish-container stack-l">
+        <div class="inset-squish-xs"><div>xs</div></div>
+        <div class="inset-squish-ss"><div>ss</div></div>
+        <div class="inset-squish-m"><div>m</div></div>
+        <div class="inset-squish-l"><div>l</div></div>
+        <div class="inset-squish-xl"><div>xl</div></div>
+      </section>
+      <h5>Inline</h5>
+      <section class="inline-container stack-l">
+        <div class="inline-xxs"><span>xxs</span></div>
+        <div class="inline-xs"><span>xs</span></div>
+        <div class="inline-ss"><span>ss</span></div>
+        <div class="inline-m"><span>m</span></div>
+        <div class="inline-l"><span>l</span></div>
+        <div class="inline-xl"><span>xl</span></div>
+      </section>
+      <h5>Stack</h5>
       <section class="stack-container stack-l">
-        <div class="stack-xxs">xxs</div>
+        <div class="stack-xxs"><span>xxs</span></div>
         <div class="stack-xs">xs</div>
         <div class="stack-ss">ss</div>
         <div class="stack-m">m</div>
