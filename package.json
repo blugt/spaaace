@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "CSS helper classes for spacing design.",
   "main": "main.styl",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/blugt/spaaace.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "npx stylus src/main.styl -o dist/style.css",
