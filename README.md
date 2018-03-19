@@ -8,6 +8,8 @@ I found this article quite helpful, even though I'm not a designer I still am a 
 
 There's no real science for getting started with this project.
 
+**A note on the sizes used:** The base unit of measure used was 2 pixels and then an exponential function applied until the desired maximum size. The article mentioned, however, that many other systems can be adopted to calculate these sizes.
+
 ### Prerequisites
 
 To compile a new version you'll need:
@@ -42,17 +44,34 @@ To test that everything is installed execute `npm run compile` and it should gen
 
 To use this in a project just import the css file from `node_modules/spaaace/style.css`.
 
+### Usage
+
+  The classes are divided into 5 main types
+
+  * `inset` - For spacing inside an element.
+  * `inset-stretch` - Same as `inset` with less space on the right and left
+  * `inset-squish` - Same as `inset` with less space on top and bottom
+  * `stack` - For spacing outside the element's bottom
+  * `inline` - For spacing outside the element's right
+
+  The following are the sizes to be used in conjunction to the previous types (ex: `inset-xl`)
+
+  * `xxs` (excluding inset-stretch and inset-squish)
+  * `xs`
+  * `ss`
+  * `m`
+  * `l`
+  * `xl`
+
+**Examples:** For visual reference open the index.html file which has all the classes laid out in different elements.
+
 ## Built With
 
 * [Stylus](http://stylus-lang.com/)
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/blugt/spaaace/tags). 
 
 ## Authors
 

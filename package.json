@@ -9,7 +9,7 @@
     "compile-compress": "npx stylus src/main.styl -c -o dist/style.css"
   },
   "author": "Telmo Alves",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "stylus": "^0.54.5"
   }
